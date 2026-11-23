@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="주유창의 학습 과정과 AI 프로젝트를 소개하는 개인 포트폴리오">
+  <title>주유창 | Portfolio</title>
+  <style>
+    :root{--navy:#101a2b;--blue:#315efb;--ink:#172033;--muted:#667085;--line:#e7eaf0;--paper:#f6f8fc;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,26,43,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid #ffffff18}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:.04em;font-size:18px}.brand span{color:#8ca7ff}
+    .menu{display:flex;gap:25px;align-items:center;font-size:13px;color:#cbd3e1}.menu a:hover,.menu a.active{color:#fff}.menu a.active{box-shadow:inset 0 -2px #8ca7ff;padding:26px 0}
+    .hero{background:linear-gradient(120deg,#101a2b 0%,#172b4b 65%,#25447d 100%);color:white;padding:105px 0 100px;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff18;border-radius:50%;right:-80px;top:-160px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
+    .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a9bcff;font-weight:700}.hero h1{font-size:clamp(40px,7vw,72px);line-height:1.12;margin:18px 0 20px;letter-spacing:-.05em}.hero p{max-width:580px;color:#d3dced;font-size:17px;margin:0 0 32px}
+    .btn{display:inline-flex;padding:12px 19px;border-radius:8px;background:var(--blue);color:white;font-weight:700;font-size:14px}.btn.ghost{background:transparent;border:1px solid #ffffff66;margin-left:9px}
+    section{padding:82px 0}.section-head{margin-bottom:32px}.kicker{font-size:11px;color:var(--blue);letter-spacing:.16em;font-weight:800}.section-head h2{font-size:32px;letter-spacing:-.04em;margin:7px 0}.section-head p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 28px #17203308}
+    .panel h3{margin:0 0 15px;font-size:17px}.muted{color:var(--muted)}.profile-name{font-size:27px;font-weight:800;margin:0 0 6px}.tag{display:inline-block;background:#eef2ff;color:#3152c9;padding:5px 10px;border-radius:30px;font-size:11px;font-weight:700;margin:3px 5px 3px 0}
+    .info{display:grid;grid-template-columns:100px 1fr;gap:9px;font-size:14px}.info b{color:#596579}.timeline{border-left:2px solid #dce4ff;padding-left:18px;margin:14px 0}.timeline strong{display:block}.timeline small{color:var(--muted)}
+    .certificate{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}.cert-preview{min-height:250px;border:1px dashed #b9c5dc;border-radius:12px;background:linear-gradient(135deg,#f7f9ff,#edf2fb);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;color:#667085}
+    .cert-preview img{width:100%;height:auto;max-height:360px;object-fit:contain;border-radius:8px;display:none}.cert-preview.has-image img{display:block}.cert-preview.has-image .placeholder{display:none}
+    .cert-meta{font-size:14px}.cert-meta div{padding:10px 0;border-bottom:1px solid var(--line)}.cert-meta b{display:inline-block;width:90px;color:#586477}
+    .empty{border:1px dashed #cbd3e1;background:#fff;border-radius:16px;padding:34px;text-align:center;color:var(--muted)}
+    .contact{background:var(--navy);color:white}.contact .section-head p{color:#c5cede}.contact-card{border:1px solid #ffffff24;border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:20px}.contact-card p{margin:0;color:#c5cede}
+    footer{padding:22px 0;background:#0b1321;color:#8792a5;font-size:12px;text-align:center}
+    @media(max-width:700px){.nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:15px 0}.menu{width:100%;overflow:auto;gap:19px;padding-bottom:5px;white-space:nowrap}.menu a.active{padding:0 0 5px}.hero{padding:75px 0}.grid,.certificate{grid-template-columns:1fr}.contact-card{align-items:flex-start;flex-direction:column}section{padding:62px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">YC<span>.</span> PORTFOLIO</a>
+  <nav class="menu" aria-label="주요 메뉴">
+    <a href="#home" class="active">Home</a><a href="#profile">Profile</a><a href="#activities">Activities</a><a href="#certificate">Certificate</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main>
+  <section class="hero" id="home"><div class="wrap">
+    <div class="eyebrow">Personal Portfolio · 2026</div>
+    <h1>Learning today,<br>building tomorrow.</h1>
+    <p>안녕하세요. 주유창입니다. 배운 것을 기록하고, AI와 기술을 활용해 새로운 가능성을 만들어가는 과정을 소개합니다.</p>
+    <a class="btn" href="#profile">프로필 보기</a><a class="btn ghost" href="#activities">활동 살펴보기</a>
+  </div></section>
+  <section id="profile"><div class="wrap">
+    <div class="section-head"><div class="kicker">01 · ABOUT</div><h2>Profile</h2><p>기본 정보와 학력</p></div>
+    <div class="grid">
+      <article class="panel"><div class="tag">STUDENT</div><p class="profile-name">주유창</p><p class="muted">배움과 경험을 연결하며 성장하는 학생입니다.</p></article>
+      <article class="panel"><h3>Education</h3>
+        <div class="timeline"><strong>한림성심대학교</strong><small>2026.03 입학 · 2028년 졸업 예정</small></div>
+        <div class="timeline"><strong>춘천고등학교</strong><small>2023년 입학 · 2025년 졸업</small></div>
+      </article>
+    </div>
+  </div></section>
+  <section id="activities" style="background:#fff"><div class="wrap">
+    <div class="section-head"><div class="kicker">02 · EXPERIENCE</div><h2>Research &amp; Activities</h2><p>학습, 연구 및 대외 활동을 주제별로 정리합니다.</p></div>
+    <div class="grid"><article class="panel"><div class="tag">CERTIFICATE</div><h3>AI 윤리 교육 수료</h3><p class="muted">UNESCO와 LG AI Research가 함께한 AI 윤리 관련 온라인 교육을 이수했습니다.</p><a class="btn" href="#certificate">수료증 확인하기</a></article>
+      <article class="panel"><div class="tag">LEARNING</div><h3>Continuous Learning</h3><p class="muted">새로운 기술과 지식을 꾸준히 학습하고, 배운 내용을 실제 결과물로 연결해 나갑니다.</p></article></div>
+  </div></section>
+  <section id="certificate"><div class="wrap">
+    <div class="section-head"><div class="kicker">03 · CREDENTIALS</div><h2>Certificate</h2><p>교육 이수 및 인증 내역</p></div>
+    <div class="panel certificate">
+      <div class="cert-preview" id="certPreview"><div class="placeholder"><div style="font-size:42px">✦</div><strong>Certificate Image</strong><p style="font-size:12px">수료증 이미지 파일을<br>index.html과 같은 폴더에 넣으면 표시됩니다.</p></div><img id="certImage" src="Screenshot%202026-11-16%20091601.png" alt="Global MOOC on the Ethics of AI 수료증"></div>
+      <div><div class="tag">COMPLETED · 2026.09.20</div><h3 style="font-size:22px;margin:12px 0">Global MOOC on the Ethics of AI</h3><p class="muted">AI 윤리의 기본 원칙과 책임 있는 AI 활용에 관한 온라인 교육 과정</p>
+        <div class="cert-meta"><div><b>수료자</b>주유창</div><div><b>발급 기관</b>UNESCO · LG AI Research</div><div><b>플랫폼</b>Coursera</div><div><b>수료일</b>2026년 9월 20일</div></div>
+        <p style="margin:18px 0 0"><a class="btn" href="https://coursera.org/verify/5Z0SSJLK2J69" target="_blank" rel="noopener">수료증 검증하기 ↗</a></p>
+      </div>
+    </div>
+  </div></section>
+  <section id="projects" style="background:#fff"><div class="wrap">
+    <div class="section-head"><div class="kicker">04 · WORK</div><h2>AI Projects</h2><p>아이디어를 실제 결과물로 발전시키는 프로젝트 공간</p></div>
+    <div class="empty"><strong>Projects coming soon</strong><p>앞으로 진행하는 AI 프로젝트와 결과물을 이곳에 추가할 예정입니다.</p></div>
+  </div></section>
+  <section class="contact" id="contact"><div class="wrap">
+    <div class="section-head"><div class="kicker">05 · CONNECT</div><h2>Contact</h2><p>포트폴리오를 방문해 주셔서 감사합니다.</p></div>
+    <div class="contact-card"><div><strong style="font-size:20px">주유창</strong><p>한림성심대학교 · Personal Portfolio</p></div><a class="btn" href="#home">맨 위로 ↑</a></div>
+  </div></section>
+</main>
+<footer>© 2026 JOO YUCHANG. All rights reserved.</footer>
+<script>
+  const image=document.getElementById('certImage'), preview=document.getElementById('certPreview');
+  image.addEventListener('load',()=>preview.classList.add('has-image'));
+  image.addEventListener('error',()=>preview.classList.remove('has-image'));
+  const links=[...document.querySelectorAll('.menu a')];
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id));}}),{rootMargin:'-35% 0px -55% 0px'});
+  document.querySelectorAll('main section[id]').forEach(section=>observer.observe(section));
+</script>
+</body></html>
